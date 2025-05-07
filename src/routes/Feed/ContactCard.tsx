@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import React from "react"
 import {
-  MdOutlineContactPage,
+  AiFillProfile,
   AiOutlineGithub,
   AiOutlineInstagram,
   SiVelog,
@@ -54,7 +54,7 @@ const ContactCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <MdOutlineContactPage className="icon" />
+            <AiFillProfile className="icon" />
             <div className="name">resume</div>
           </a>
         )}
