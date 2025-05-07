@@ -4,7 +4,7 @@ import {
   MdOutlineContactPage,
   AiOutlineGithub,
   AiOutlineInstagram,
-  SiVelog
+  SiVelog,
   AiOutlineMail,
 } from "react-icons/ai"
 import { CONFIG } from "site.config"
