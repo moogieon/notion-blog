@@ -4,7 +4,7 @@ import {
   AiFillProfile,
   AiOutlineGithub,
   AiOutlineInstagram,
-  SiVelog,
+  AiVelog,
   AiOutlineMail,
 } from "react-icons/ai"
 import { CONFIG } from "site.config"
@@ -63,7 +63,7 @@ const ContactCard: React.FC = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <SiVelog className="icon" />
+          <AiVelog className="icon" />
           <div className="name">velog</div>
         </a>
 
