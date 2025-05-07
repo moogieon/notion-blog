@@ -116,3 +116,4 @@ const StyledWrapper = styled.div`
       line-height: 1.25rem;
     }
   }
+`
