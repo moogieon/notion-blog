@@ -83,6 +83,10 @@ const ContactCard: React.FC = () => {
 
 export default ContactCard
 
+const StyledTitle = styled.div`
+  padding: 0.25rem;
+  margin-bottom: 0.75rem;
+`
 const StyledWrapper = styled.div`
   display: flex;
   padding: 0.25rem;
@@ -90,7 +94,6 @@ const StyledWrapper = styled.div`
   border-radius: 1rem;
   background-color: ${({ theme }) =>
     theme.scheme === "light" ? "white" : theme.colors.gray4};
-
   a {
     display: flex;
     padding: 0.75rem;
@@ -104,12 +107,10 @@ const StyledWrapper = styled.div`
       color: ${({ theme }) => theme.colors.gray12};
       background-color: ${({ theme }) => theme.colors.gray5};
     }
-
     .icon {
       font-size: 1.5rem;
       line-height: 2rem;
     }
-
     .name {
       font-size: 0.875rem;
       line-height: 1.25rem;
