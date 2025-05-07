@@ -49,7 +49,7 @@ const ContactCard: React.FC = () => {
         )}
         {CONFIG.profile.linkedin && (
           <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            href={`/resume`}
             rel="noreferrer"
             target="_blank"
           >
@@ -57,6 +57,22 @@ const ContactCard: React.FC = () => {
             <div className="name">linkedin</div>
           </a>
         )}
+        <div className="blog-links">
+          <a
+            href="https://velog.io/@moogieon"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="name">Velog</div>
+          </a>
+          <a
+            href="https://moogieon.github.io"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className="name">GitHub Blog</div>
+          </a>
+        </div>
       </StyledWrapper>
     </>
   )
@@ -97,4 +113,24 @@ const StyledWrapper = styled.div`
       line-height: 1.25rem;
     }
   }
+  .blog-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 0 0.75rem;
+
+  a {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: ${({ theme }) => theme.colors.gray11};
+    background-color: ${({ theme }) =>
+    theme.scheme === "light" ? theme.colors.gray3 : theme.colors.gray5};
+
+    :hover {
+      background-color: ${({ theme }) => theme.colors.gray6};
+      color: ${({ theme }) => theme.colors.gray12};
+    }
+  }
+}
 `
