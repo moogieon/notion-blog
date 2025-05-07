@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import React from "react"
 import {
-  AiFillLinkedin,
+  MdOutlineContactPage,
   AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineMail,
@@ -53,26 +53,28 @@ const ContactCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
+            <MdOutlineContactPage className="icon" />
+            <div className="name">resume</div>
           </a>
         )}
-        <div className="blog-links">
-          <a
-            href="https://velog.io/@moogieon"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <div className="name">Velog</div>
-          </a>
-          <a
-            href="https://moogieon.github.io"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <div className="name">GitHub Blog</div>
-          </a>
-        </div>
+        <a
+          href="https://velog.io/@moogieon"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <SiVelog className="icon" />
+          <div className="name">velog</div>
+        </a>
+
+        {/* ✅ GitHub 블로그 */}
+        <a
+          href="https://moogieon.github.io"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineGithub className="icon" />
+          <div className="name">github blog</div>
+        </a>
       </StyledWrapper>
     </>
   )
@@ -80,10 +82,6 @@ const ContactCard: React.FC = () => {
 
 export default ContactCard
 
-const StyledTitle = styled.div`
-  padding: 0.25rem;
-  margin-bottom: 0.75rem;
-`
 const StyledWrapper = styled.div`
   display: flex;
   padding: 0.25rem;
@@ -91,6 +89,7 @@ const StyledWrapper = styled.div`
   border-radius: 1rem;
   background-color: ${({ theme }) =>
     theme.scheme === "light" ? "white" : theme.colors.gray4};
+
   a {
     display: flex;
     padding: 0.75rem;
@@ -104,33 +103,14 @@ const StyledWrapper = styled.div`
       color: ${({ theme }) => theme.colors.gray12};
       background-color: ${({ theme }) => theme.colors.gray5};
     }
+
     .icon {
       font-size: 1.5rem;
       line-height: 2rem;
     }
+
     .name {
       font-size: 0.875rem;
       line-height: 1.25rem;
     }
   }
-  .blog-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  padding: 0 0.75rem;
-
-  a {
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    color: ${({ theme }) => theme.colors.gray11};
-    background-color: ${({ theme }) =>
-    theme.scheme === "light" ? theme.colors.gray3 : theme.colors.gray5};
-
-    :hover {
-      background-color: ${({ theme }) => theme.colors.gray6};
-      color: ${({ theme }) => theme.colors.gray12};
-    }
-  }
-}
-`
