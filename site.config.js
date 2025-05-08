@@ -5,15 +5,15 @@ const CONFIG = {
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "frontend developer",
     bio: "I develop everything using node.",
-    email: "moogieon.dev@gmail.com",
+    email: "moogieon817@gmail.com",
     linkedin: "moogieon",
     github: "moogieon",
     instagram: "",
   },
   projects: [
     {
-      name: `moogieon-blog`,
-      href: "https://github.com/moogieon/moogieon-blog",
+      name: `match-mind`,
+      href: "https://www.match-mind.com",
     },
   ],
   // blog setting (required)
@@ -25,7 +25,7 @@ const CONFIG = {
 
   // CONFIG configration (required)
   link: "https://moogieon-blog.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
+  since: "", // If leave this empty, current year will be used.
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
