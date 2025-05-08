@@ -19,7 +19,7 @@ const ServiceCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <Image src={"/match-mind.png"} alt={project.name} />
+            <Image className="icon" src={"/match-mind.png"} alt={project.name} />
             <div className="name">{project.name}</div>
           </a>
         ))}
