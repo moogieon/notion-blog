@@ -4,7 +4,6 @@ import {
   AiFillProfile,
   AiOutlineGithub,
   AiOutlineInstagram,
-  AiVelog,
   AiOutlineMail,
 } from "react-icons/ai"
 import { CONFIG } from "site.config"
@@ -58,24 +57,6 @@ const ContactCard: React.FC = () => {
             <div className="name">resume</div>
           </a>
         )}
-        <a
-          href="https://velog.io/@moogieon"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <AiVelog className="icon" />
-          <div className="name">velog</div>
-        </a>
-
-        {/* ✅ GitHub 블로그 */}
-        <a
-          href="https://moogieon.github.io"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <AiOutlineGithub className="icon" />
-          <div className="name">github blog</div>
-        </a>
       </StyledWrapper>
     </>
   )
